@@ -1,3 +1,6 @@
+'use client'
+import Tilt from 'react-parallax-tilt';
+
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center px-6">
@@ -25,22 +28,39 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Glass Info Card */}
-        <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-2xl shadow-xl max-w-sm mx-auto hover:shadow-[0_0_30px_rgba(168,85,247,0.25)] transition duration-300">
+        <div className="relative group" style={{ width: '320px', height: '320px', margin: '0 auto' }}>
+          {/* glowing background */}
+          <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-purple-600/30 via-pink-500/20 to-blue-400/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
 
-          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-200 to-blue-400 flex items-center justify-center font-bold text-blue-900 shadow-md">
-            AV
-          </div>
+          <Tilt
+            tiltMaxAngleX={8}
+            tiltMaxAngleY={8}
+            scale={1.05}
+            transitionSpeed={250}
+            className="rounded-2xl overflow-hidden relative z-10"
+            style={{ width: '320px', height: '320px' }}
+          >
+            <div className="relative bg-white/6 backdrop-blur-2xl border border-white/10 p-8 rounded-2xl shadow-[0_12px_30px_rgba(168,85,247,0.12)] hover:shadow-[0_0_40px_rgba(168,85,247,0.25)] ring-1 ring-white/5 hover:ring-2 hover:ring-purple-400/20 w-full h-full mx-auto transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-200 to-blue-400 flex items-center justify-center font-bold text-blue-900 shadow-md">
+                  AV
+                </div>
 
+                <h3 className="text-sm text-gray-400 mt-4">Role</h3>
+                <p className="text-xl font-semibold mt-2">Backend Developer, Vibe Coder,<br /> focused interfaces.</p>
+              </div>
 
-          <h3 className="text-sm text-gray-400">Role</h3>
-          <p className="text-xl font-semibold mt-2">Backend Developer, Vibe Coder,<br /> focused interfaces.</p>
-          <hr className="text-gray-400 my-3 " />
-          <div className="flex justify-between mt-8 text-sm text-gray-400">
-            <span>Projects<br /><strong className="text-white text-lg">10+</strong></span>
-            <span>Learning<br /><strong className="text-white text-lg">2+ yrs</strong></span>
-          </div>
+              <div className="flex justify-between mt-8 text-sm text-gray-400">
+                <span>Projects<br /><strong className="text-white text-lg">10+</strong></span>
+                <span>Learning<br /><strong className="text-white text-lg">2+ yrs</strong></span>
+              </div>
+
+              {/* inner subtle glow */}
+              <div className="absolute inset-0 rounded-2xl pointer-events-none bg-gradient-to-tr from-white/5 to-transparent mix-blend-overlay"></div>
+            </div>
+          </Tilt>
         </div>
+
 
       </div>
     </section>
