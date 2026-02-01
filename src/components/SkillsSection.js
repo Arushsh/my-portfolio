@@ -16,12 +16,12 @@ function SkillsSection() {
     }`;
 
   return (
-    <section id="skills" className="py-24 px-6">
+    <section id="skills" className="py-16 md:py-24 px-6">
       <h2 className="text-3xl font-bold mb-12">What I Work With</h2>
 
       <Fade duration={0.6}>
         <Slide direction="up" distance={30}>
-          <div className="relative group max-w-5xl mx-auto">
+          <div className="relative group max-w-5xl mx-auto reveal" data-delay="120">
             <div className="pointer-events-none absolute -inset-2 rounded-2xl bg-gradient-to-r from-red-600 via-pink-600 to-red-600 opacity-0 blur-xl transition duration-300 group-hover:opacity-70"></div>
 
             <div className="relative bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
@@ -41,13 +41,13 @@ function SkillsSection() {
                   <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-gray-300">
                     {(activeTab === "skills" ? skills :
                       activeTab === "interests" ? interests : tools
-                    ).map((item) => (
+                    ).map((item, idx) => (
                       <Fade key={item}>
-                        <div className="bg-white/5 border border-white/10 px-3 py-2 rounded-lg text-center hover:border-red-500 hover:text-red-400 transition">
+                        <div className="bg-white/5 border border-white/10 px-3 py-2 rounded-lg text-center hover:border-red-500 hover:text-red-400 transition reveal" style={{ transitionDelay: `${idx * 60}ms` }}>
                           {item}
                         </div>
                       </Fade>
-                    ))}
+                    ))} 
                   </div>
                 </Stagger>
               </Fade>

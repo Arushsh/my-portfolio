@@ -45,10 +45,10 @@ export default function Projects() {
   const visibleProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
-    <section id="projects" className="py-24 px-6">
-      <div className="max-w-7xl mx-auto">
-        <p className="text-gray-500 mb-3 text-xl">PROJECTS</p>
-        <h2 className="text-3xl font-bold mb-14">Selected Work</h2>
+    <section id="projects" className="py-16 md:py-24 px-6">
+      <div className="max-w-7xl mx-auto reveal" data-delay="120">
+        <p className="text-gray-500 mb-3 text-xl reveal" data-delay="120">PROJECTS</p>
+        <h2 className="text-3xl font-bold mb-14 reveal" data-delay="150">Selected Work</h2>
 
 <LampContainer target={lampTarget} active={lampActive} className="mb-8">
         <div className="w-full">
@@ -64,7 +64,8 @@ export default function Projects() {
                 setLampActive(true);
               }}
               onMouseLeave={() => setLampActive(false)}
-              className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.25)] transition duration-300"
+              className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.25)] transition duration-300 reveal"
+              style={{ transitionDelay: `${index * 80}ms` }}
             >
               <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
               

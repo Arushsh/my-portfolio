@@ -6,29 +6,29 @@ export default function Hero() {
     <section className="min-h-screen flex items-center px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-        <div>
-          <span className="text-sm text-purple-400 tracking-widest">PORTFOLIO • 2026</span>
-          <h1 className="text-5xl md:text-6xl font-bold mt-4 leading-tight">
+        <div className="reveal" data-delay="100">
+          <span className="text-sm text-purple-400 tracking-widest reveal" data-delay="120">PORTFOLIO • 2026</span>
+          <h1 className="text-5xl md:text-6xl font-bold mt-4 leading-tight reveal" data-delay="150">
             Hi, I'm <span className="text-purple-400">Arush Vishwakarma</span>.<br />
             I build modern digital experiences.
           </h1>
-          <p className="mt-6 text-gray-400 max-w-xl">
+          <p className="mt-6 text-gray-400 max-w-xl reveal" data-delay="180">
             I build ideas into real products — from web and mobile apps to clean UI/UX.
           </p>
 
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex gap-4 reveal" data-delay="210">
             <a href="#projects" className="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-500">View Projects</a>
             <a href="#contact" className="px-6 py-3 rounded-full border border-white/20 hover:bg-white/10">Contact Me</a>
           </div>
 
-          <div className="mt-10 flex gap-6 text-sm text-gray-400">
-            <div className=" rounded-full border border-white/20 hover:bg-white/10 px-5 py-1"><span className="block text-gray-500">Experience</span> Fresher</div>
-            <div className=" rounded-full border border-white/20 hover:bg-white/10 px-5 py-1"><span className="block text-gray-500">Speciality</span> Web & App Dev</div>
-            <div className=" rounded-full border border-white/20 hover:bg-white/10 px-5 py-1"><span className="block text-gray-500 ">Location</span> India</div>
+          <div className="mt-10 flex gap-6 text-sm text-gray-400 reveal" data-delay="240">
+            <div className=" rounded-full border border-white/20 hover:bg-white/10 px-5 py-1 reveal" data-delay="260"><span className="block text-gray-500">Experience</span> Fresher</div>
+            <div className=" rounded-full border border-white/20 hover:bg-white/10 px-5 py-1 reveal" data-delay="280"><span className="block text-gray-500">Speciality</span> Web & App Dev</div>
+            <div className=" rounded-full border border-white/20 hover:bg-white/10 px-5 py-1 reveal" data-delay="300"><span className="block text-gray-500 ">Location</span> India</div>
           </div>
         </div>
 
-        <div className="relative group" style={{ width: '320px', height: '320px', margin: '0 auto' }}>
+        <div className="relative group reveal" data-delay="150" style={{ width: '320px', height: '320px', margin: '0 auto' }}>
           {/* glowing background */}
           <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-purple-600/30 via-pink-500/20 to-blue-400/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
 

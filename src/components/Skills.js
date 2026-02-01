@@ -20,14 +20,14 @@ export default function SkillsSection() {
     return (
 
 
-         <section id="skills" className="py-24 px-6">
+         <section id="skills" className="py-16 md:py-24 px-6">
       {/* <div className="max-w-7xl mx-auto"> */}
         
         {/* <section id="skills" className="py-24 px-6">
             <h2 className="text-3xl font-bold mb-12 mx-30">What I Work With</h2> */}
 
           
-            <div className="relative group max-w-7xl mx-auto">
+            <div className="relative group max-w-7xl mx-auto reveal" data-delay="120">
                 <p className="text-gray-500 mb-3 text-xl">SKILLS & INTERESTS</p>
             <h2 className="text-3xl font-bold mb-14">What I Work With</h2>
                 {/* Outer Gradient Shadow */}
@@ -37,7 +37,7 @@ export default function SkillsSection() {
                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
 
                     {/* Toggle Buttons */}
-                    <div className="flex gap-3 mb-8">
+                    <div className="flex gap-3 mb-8 reveal" data-delay="120">
                         <button onClick={() => setActiveTab("skills")} className={tabStyle("skills")}>
                             Skills
                         </button>
@@ -47,7 +47,7 @@ export default function SkillsSection() {
                         <button onClick={() => setActiveTab("tools")} className={tabStyle("tools")}>
                             Tools
                         </button>
-                    </div>
+                    </div> 
 
                     {/* Content Area */}
                     <div className="grid gap-4 text-gray-300">
@@ -55,10 +55,10 @@ export default function SkillsSection() {
                             <>
                                 <div className="flex flex-wrap gap-4 max-w-7xl mx-auto">
                                     {skills.map((skill, i) => (
-                                        <span key={i} className="px-5 py-2 bg-white/5 border border-white/10 rounded-full text-gray-300">
+                                        <span key={i} className="px-5 py-2 bg-white/5 border border-white/10 rounded-full text-gray-300 reveal" style={{ transitionDelay: `${i * 40}ms` }}>
                                             {skill}
                                         </span>
-                                    ))}
+                                    ))} 
                                 </div>
                             </>
                         )}
@@ -67,10 +67,10 @@ export default function SkillsSection() {
                             <>
                                 <div className="flex flex-wrap gap-4 max-w-7xl mx-auto">
                                     {interests.map((skill, i) => (
-                                        <span key={i} className="px-5 py-2 bg-white/5 border border-white/10 rounded-full text-gray-300">
+                                        <span key={i} className="px-5 py-2 bg-white/5 border border-white/10 rounded-full text-gray-300 reveal" style={{ transitionDelay: `${i * 40}ms` }}>
                                             {skill}
                                         </span>
-                                    ))}
+                                    ))} 
                                 </div>
                             </>
                         )}
@@ -79,10 +79,10 @@ export default function SkillsSection() {
                             <>
                                 <div className="flex flex-wrap gap-4 max-w-7xl">
                                     {tools.map((skill, i) => (
-                                        <span key={i} className="px-5 py-2 bg-white/5 border border-white/10 rounded-full text-gray-300">
+                                        <span key={i} className="px-5 py-2 bg-white/5 border border-white/10 rounded-full text-gray-300 reveal" style={{ transitionDelay: `${i * 40}ms` }}>
                                             {skill}
                                         </span>
-                                    ))}
+                                    ))} 
                                 </div>
                             </>
                         )}

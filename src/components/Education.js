@@ -2,13 +2,13 @@ import { FaGithub } from "react-icons/fa"
 
 export default function Education() {
   return (
-    <section id="education" className="py-24 px-6">
-      <div className="max-w-7xl mx-auto">
-        <p className="text-gray-500 mb-3 text-xl">EDUCATION</p>
-        <h2 className="text-3xl font-bold mb-14">Where I'm learning</h2>
+    <section id="education" className="py-16 md:py-24 px-6">
+      <div className="max-w-7xl mx-auto reveal" data-delay="120">
+        <p className="text-gray-500 mb-3 text-xl reveal" data-delay="120">EDUCATION</p>
+        <h2 className="text-3xl font-bold mb-14 reveal" data-delay="150">Where I'm learning</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-          <div className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.25)] transition duration-300">
+          <div className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.25)] transition duration-300 reveal" data-delay="180">
             <h3 className="text-2xl font-semibold mb-3 text-center">Bachelor of Technology in CSE</h3>
             <p className="text-gray-400">
               <span className="font-semibold">Institution</span> : Shambhunath Institute of Engineering and Technology
@@ -27,7 +27,7 @@ export default function Education() {
             </p>
           </div>
 
-          <div className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.25)] transition duration-300">
+          <div className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-purple-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.25)] transition duration-300 reveal" data-delay="220">
             <h3 className="text-2xl font-semibold mb-3 text-center">Diploma in CSE</h3> 
             <p className="text-gray-400"><span className="font-semibold">Institution</span>: Mahamaya Polytechnic of Information & Technology</p>
              <p className="text-gray-400">

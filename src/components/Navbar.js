@@ -9,16 +9,16 @@ export default function Navbar() {
         <h1 className="text-lg font-semibold tracking-widest">ARUSH<span className="text-gray-500">VISHWAKARMA</span></h1>
 
         <div className="hidden md:flex gap-8 text-sm text-gray-300">
-          <Link href="#about">About</Link>
-          <Link href="#skills">Skills</Link>
-          <Link href="#projects">Projects</Link>
-          <Link href="#education">Education</Link>
-          <Link href="#contact">Contact</Link>
+          <Link href="#about" className="hover:text-white hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">About</Link>
+          <Link href="#skills" className="hover:text-white hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">Skills</Link>
+          <Link href="#projects" className="hover:text-white hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">Projects</Link>
+          <Link href="#education" className="hover:text-white hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">Education</Link>
+          <Link href="#contact" className="hover:text-white hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">Contact</Link>
         </div>
 
         <a
           href="/resume.pdf"
-          className="hidden md:block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-medium"
+          className="hidden md:block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-medium transform transition hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-400/30"
         >
           Download CV
         </a>
