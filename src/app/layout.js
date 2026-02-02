@@ -1,10 +1,14 @@
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import RevealObserver from '@/components/ui/RevealObserver'
+import { icons } from 'lucide-react'
 
 export const metadata = {
-  title: 'Arush Vishwakarma - Portfolio',
+  title: 'Arush Vishwakarma | Portfolio',
   description: 'My Developer Portfolio',
+ icons:{
+    icon: '/icon.png',
+ },
 }
 
 export default function RootLayout({ children }) {

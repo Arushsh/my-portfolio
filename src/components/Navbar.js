@@ -22,11 +22,11 @@ export default function Navbar() {
         <h1 className="text-lg font-semibold tracking-widest">ARUSH<span className="text-gray-500">VISHWAKARMA</span></h1>
 
         <div className="hidden md:flex gap-8 text-sm text-gray-300">
-          <Link href="#about" className="hover:text-white hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">About</Link>
-          <Link href="#skills" className="hover:text-white hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">Skills</Link>
-          <Link href="#projects" className="hover:text-white hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">Projects</Link>
-          <Link href="#education" className="hover:text-white hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">Education</Link>
-          <Link href="#contact" className="hover:text-white hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">Contact</Link>
+          <Link href="#about" className="hover:text-amber-300 hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">About</Link>
+          <Link href="#skills" className="hover:text-amber-300 hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">Skills</Link>
+          <Link href="#projects" className="hover:text-amber-300 hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">Projects</Link>
+          <Link href="#education" className="hover:text-amber-300 hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">Education</Link>
+          <Link href="#contact" className="hover:text-amber-300 hover:underline hover:underline-offset-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400/25 rounded">Contact</Link>
         </div>
 
         <a

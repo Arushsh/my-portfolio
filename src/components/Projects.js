@@ -9,7 +9,7 @@ const projects = [
   {
     title: "Simplify",
     description: "An AI powered ChatApp built using React and django for giving your answers",
-    tech: ["Python", "Tailwind", "React"],
+    tech: ["Python", "Tailwind", "React","OpenAI API"],
     github: "https://github.com/yourusername/portfolio"
   },
   {
@@ -20,21 +20,21 @@ const projects = [
   },
   {
     title: "School Management System",
-    description: "A digital system for the ",
+    description: "A digital system for management of student records, attendance, and grades along with teachers and staff management.",
     tech: ["JavaScript", "HTML", "CSS", "Django","Python"],
-    github: "https://github.com/yourusername/task-manager"
+    github: "https://github.com/yourusername/school-management-system"
   },
   {
     title: "E-commerce Website",
     description: "A responsive e-commerce website with product listings, cart functionality, and checkout process.",
     tech: ["Django", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/yourusername/task-manager"
+    github: "https://github.com/yourusername/e-commerce-website"
   },
   {
-    title: "Task Manager",
-    description: "A productivity app to manage daily tasks with CRUD functionality and local storage.",
-    tech: ["JavaScript", "HTML", "CSS"],
-    github: "https://github.com/yourusername/task-manager"
+    title: "HealthCare Application",
+    description: "A mobile application for managing health records, appointments, and medical history using Android Studio and Firebase.",
+    tech: ["Java", "Firebase", "XML", "Android Studio"],
+    github: "https://github.com/yourusername/healthcare-application"
   }
 ]
 
