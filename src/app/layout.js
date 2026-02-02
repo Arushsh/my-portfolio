@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar/>
         <RevealObserver />
-        {children}
+        <main className="pt-16 md:pt-20">{children}</main>
       </body>
     </html>
   )
