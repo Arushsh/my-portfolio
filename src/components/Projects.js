@@ -10,7 +10,7 @@ const projects = [
     title: "Simplify",
     description: "An AI powered ChatApp built using React and django for giving your answers",
     tech: ["Python", "Tailwind", "React","OpenAI API"],
-    github: "https://github.com/yourusername/portfolio"
+    github: "https://github.com/Arushsh/Simplify"
   },
   {
     title: "Weather App",
@@ -28,7 +28,7 @@ const projects = [
     title: "E-commerce Website",
     description: "A responsive e-commerce website with product listings, cart functionality, and checkout process.",
     tech: ["Django", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/yourusername/e-commerce-website"
+    github: "https://github.com/Arushsh/ecommerce"
   },
   {
     title: "HealthCare Application",
