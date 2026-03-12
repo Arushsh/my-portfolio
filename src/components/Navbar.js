@@ -31,6 +31,7 @@ export default function Navbar() {
 
         <a
           href="/Arush_Resume.pdf"
+          download
           className="hidden md:block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-medium transform transition hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-400/30"
         >
           Download CV
@@ -62,7 +63,8 @@ export default function Navbar() {
             <NavLinks onClick={() => setMenuOpen(false)} />
 
             <a
-              href="/Arush_Resume"
+              href="/Arush_Resume.pdf"
+              download
               onClick={() => setMenuOpen(false)}
               className="mt-3 inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-medium transform transition hover:scale-105 hover:shadow-lg"
             >
